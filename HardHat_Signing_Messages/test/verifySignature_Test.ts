@@ -22,15 +22,16 @@ verifySignature = await ethers.deployContract("contracts/VerifySignature.sol:Ver
 it("Testing Verification", async function(){
  
 
- // Get a message has.  it will return a string.
+
  let to = user1.address;
  let amount = 1;
  let message = "Testing this message";
  let nonce = 1;
 
+  // Get a message HASH using getMessageHash.  it will return a string.
 let messageHash = await verifySignature.getMessageHash(to, amount, message, nonce);
 
-///   messageHash comes back as a STRING needs to be converted to Bytes32 with ethers.getBytes
+///   messageHash:STRING -  needs to be converted to Bytes32 with ethers.getBytes
 let signMessage = await deployer.signMessage(ethers.getBytes(messageHash));
 
 let sig = await Signature.from(signMessage); /// returns sig.v, sig.r, sig.s
