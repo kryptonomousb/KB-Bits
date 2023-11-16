@@ -1,4 +1,4 @@
-# Sample Hardhat Project
+# HardHat - Signing a Message using Ethers 6
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
