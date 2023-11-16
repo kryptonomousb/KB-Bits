@@ -2,7 +2,7 @@
 
 VerifySignature.sol is from [Solidity by Example](https://solidity-by-example.org/signature/)
 
-This project demonstrates a basic Hardhat signature use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates a basic Hardhat signature setup using ethers 6. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
 Try running some of the following tasks:
 
