@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import { SignerWithAddress } from '@nomicfoundation/hardhat-ethers/signers';
 import { VerifySignature } from '../typechain-types';
 
-const { provider, deployContract, getSigners, parseEther, Signature } = ethers;
+const {  deployContract, getSigners, Signature } = ethers;
 
 
 describe('Testing Signature Ethers v6', function(){
